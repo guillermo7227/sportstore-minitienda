@@ -1,0 +1,52 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap, Font Awesome
+@import '~bootstrap/scss/bootstrap';
+@import '~font-awesome/scss/font-awesome';
+
+a.unlink {
+    color: inherit;
+}
+a.unlink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+// Animar los mensajes de retroalimentación
+.escondeme {
+    -moz-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s linear 10s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Opera */
+    animation: cssAnimation 0s linear 10s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        margin:0;
+        padding:0;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        margin:0;
+        padding:0;
+        opacity: 0;
+    }
+}
